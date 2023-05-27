@@ -34,7 +34,7 @@ public class Cliente {
         result = 31 * result + id;
         return result;
     }
-    public void adquirirProduto(Produto produto) throws Exception{
+    public void adquirirProduto(Produto produto){
                 this.produtosAdquiridos.add(produto);
                 this.valorDaConta += produto.getValor();
             }

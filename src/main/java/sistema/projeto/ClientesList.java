@@ -1,5 +1,8 @@
 package sistema.projeto;
 
+import sistema.projeto.exceptions.ClienteJaExisteException;
+import sistema.projeto.exceptions.ClienteNaoExisteException;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,16 +15,18 @@ public class ClientesList implements SistemaClientes_Interface {
     }
 
     @Override
-    public void cadastrarCliente(Cliente cliente) throws Exception {
+    public void cadastrarCliente(Cliente cliente) throws ClienteJaExisteException {
         if (clienteRepetido(cliente)){
-            throw new Exception("Cliente já existe no Sistema");
+            throw new ClienteJaExisteException("Cliente já existe no Sistema");
+        } else {
+            clientesList.add(cliente);
         }
-        /*TODO*/
+
 
     }
 
     @Override
-    public void apagarCliente(String nome, String id) throws Exception {
+    public void apagarCliente(String nome, String id) throws ClienteNaoExisteException {
         /*TODO*/
     }
 
