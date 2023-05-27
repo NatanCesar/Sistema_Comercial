@@ -1,16 +1,20 @@
 package sistema.projeto;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 public class Cliente {
     private String nome;
     private int id;
     private double valorDaConta;
+    private List<Produto> produtosAdquiridos;
 
     public Cliente(String nome){
         this.nome = nome;
         this.id = this.hashCode();
         this.valorDaConta = 0.0;
+        this.produtosAdquiridos = new ArrayList<Produto>();
     }
 
     @Override
@@ -30,4 +34,8 @@ public class Cliente {
         result = 31 * result + id;
         return result;
     }
+    public void adquirirProduto(Produto produto) throws Exception{
+                this.produtosAdquiridos.add(produto);
+                this.valorDaConta += produto.getValor();
+            }
 }

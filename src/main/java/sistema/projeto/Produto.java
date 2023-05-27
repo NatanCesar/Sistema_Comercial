@@ -38,4 +38,8 @@ public class Produto {
         result = 31 * result + (tipoProduto != null ? tipoProduto.hashCode() : 0);
         return result;
     }
+
+    public double getValor() {
+        return this.valor;
+    }
 }
