@@ -30,4 +30,12 @@ public interface SistemaClientesInterface {
     List<Cliente> getClientes ();
 
 
+    /**
+     *
+     * @param clienteList
+     * @throws ClienteJaExisteException
+     */
+    void carregarClientes(List<Cliente> clienteList) throws ClienteJaExisteException;
+
+
 }

@@ -35,6 +35,11 @@ public class ClientesList implements SistemaClientesInterface {
         return clientesList;
     }
 
+    @Override
+    public void carregarClientes(List<Cliente> clienteList) throws ClienteJaExisteException {
+        this.clientesList = clienteList;
+    }
+
     public boolean clienteJaExiste(Cliente cliente){
         for (Cliente c: this.clientesList){
             if (c.equals(cliente)){
