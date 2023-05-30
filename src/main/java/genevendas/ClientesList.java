@@ -48,4 +48,13 @@ public class ClientesList implements SistemaClientesInterface {
         }
         return false;
     }
+
+    @Override
+    public String toString() {
+        String stringClientes = null;
+        for (Cliente c : clientesList) {
+            stringClientes = c.toString() + "###";
+        }
+        return stringClientes;
+    }
 }

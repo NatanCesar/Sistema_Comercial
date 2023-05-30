@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +57,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.genevendas.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sistema.projeto.Main" />
       <module name="Projeto_AYLA" />
@@ -70,8 +71,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="genevendas.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="genevendas.Main" />
+      <module name="Projeto_AYLA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="genevendas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.genevendas.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -87,7 +102,7 @@
       <workItem from="1685044867199" duration="1711000" />
       <workItem from="1685046635074" duration="2535000" />
       <workItem from="1685452148855" duration="3111000" />
-      <workItem from="1685466783172" duration="3957000" />
+      <workItem from="1685466783172" duration="6034000" />
     </task>
     <task id="LOCAL-00001" summary="Início do Projeto">
       <created>1685047463414</created>
@@ -145,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685470466575</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Att Projeto">
+      <created>1685471062766</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1685471062766</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
