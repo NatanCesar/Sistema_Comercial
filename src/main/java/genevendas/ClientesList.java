@@ -16,7 +16,7 @@ public class ClientesList implements SistemaClientesInterface {
 
     @Override
     public void cadastrarCliente(Cliente cliente) throws ClienteJaExisteException {
-        if (clienteRepetido(cliente)){
+        if (clienteJaExiste(cliente)){
             throw new ClienteJaExisteException("Cliente já existe no Sistema");
         } else {
             clientesList.add(cliente);
@@ -35,7 +35,7 @@ public class ClientesList implements SistemaClientesInterface {
         return clientesList;
     }
 
-    public boolean clienteRepetido(Cliente cliente){
+    public boolean clienteJaExiste(Cliente cliente){
         for (Cliente c: this.clientesList){
             if (c.equals(cliente)){
                 return true;

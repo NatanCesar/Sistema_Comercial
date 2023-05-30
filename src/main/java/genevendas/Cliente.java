@@ -16,6 +16,12 @@ public class Cliente {
         this.valorDaConta = 0.0;
         this.produtosAdquiridos = new ArrayList<Produto>();
     }
+    public Cliente(String nome, int id, double valorDaConta, String produtosAdquiridos){
+        this.nome = nome;
+        this.id = id;
+        this.valorDaConta = valorDaConta;
+        String [] produtos = produtosAdquiridos.split("!!!");
+    }
 
     @Override
     public boolean equals(Object o) {
@@ -38,4 +44,44 @@ public class Cliente {
                 this.produtosAdquiridos.add(produto);
                 this.valorDaConta += produto.getValor();
             }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getValorDaConta() {
+        return valorDaConta;
+    }
+
+    public void setValorDaConta(double valorDaConta) {
+        this.valorDaConta = valorDaConta;
+    }
+
+    public String getProdutosAdquiridos() {
+        String produtosString = null;
+        for (Produto p : produtosAdquiridos) {
+            produtosString = p.getNome() + "!!!" + p.getId() + "!!!" + p.getTipoProduto() + "!!!" + p.getValor();
+        }
+        return produtosString;
+    }
+
+
+    @Override
+    public String toString() {
+        /*TODO*/
+        return "";
+    }
 }

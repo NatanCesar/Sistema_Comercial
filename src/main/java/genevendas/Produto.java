@@ -42,4 +42,38 @@ public class Produto {
     public double getValor() {
         return this.valor;
     }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getTipoProduto() {
+        return tipoProduto;
+    }
+
+    public void setTipoProduto(String tipoProduto) {
+        this.tipoProduto = tipoProduto;
+    }
+    @Override
+    public String toString() {
+        /*TODO*/
+        return "";
+    }
 }

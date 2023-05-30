@@ -37,7 +37,7 @@ public class GravadorDeDados {
         try {
             gravador = new BufferedWriter(new FileWriter(nomeArquivo));
             for (String s: texto){
-                gravador.write(s+"##");
+                gravador.write(s+"\n");
             }
         } finally {
             if (gravador!=null){
