@@ -1,4 +1,4 @@
-package sistema.projeto;
+package genevendas;
 
 public class Main {
     public static void main(String[] args) {

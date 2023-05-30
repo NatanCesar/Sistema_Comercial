@@ -1,4 +1,4 @@
-package sistema.projeto.persistenciaDeDados;
+package genevendas.persistencia;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -27,6 +27,9 @@ public class GravadorDeDados {
         }
         return textoLido;
     }
+
+
+
 
     public void gravaTextoEmArquivo(List<String> texto, String nomeArquivo)
             throws IOException {

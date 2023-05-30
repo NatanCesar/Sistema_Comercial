@@ -1,4 +1,4 @@
-package sistema.projeto.exceptions;
+package genevendas.exceptions;
 
 public class ClienteJaExisteException extends Exception{
 

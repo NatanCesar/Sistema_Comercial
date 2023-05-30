@@ -1,4 +1,4 @@
-package sistema.projeto;
+package genevendas;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,7 +1,7 @@
-package sistema.projeto;
+package genevendas;
 
-import sistema.projeto.exceptions.ClienteJaExisteException;
-import sistema.projeto.exceptions.ClienteNaoExisteException;
+import genevendas.exceptions.ClienteJaExisteException;
+import genevendas.exceptions.ClienteNaoExisteException;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -6,11 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/ClientesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sistema/projeto/ClientesList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sistema/projeto/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/ProdutosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sistema/projeto/ProdutosList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/SistemaClientes_Interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sistema/projeto/SistemaClientesInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/SistemaProdutos_interface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sistema/projeto/SistemaProdutosInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/ClientesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/ProdutosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/SistemaClientesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/SistemaProdutosInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaProdutosInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/exceptions/ClienteJaExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/exceptions/ClienteJaExisteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/exceptions/ClienteNaoExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/exceptions/ClienteNaoExisteException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/sistema/projeto/persistenciaDeDados/GravadorDeDados.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/persistencia/GravadorDeDados.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,6 +96,7 @@
       <workItem from="1685044867199" duration="1711000" />
       <workItem from="1685046635074" duration="2535000" />
       <workItem from="1685452148855" duration="3111000" />
+      <workItem from="1685466783172" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="Início do Projeto">
       <created>1685047463414</created>
@@ -127,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685214504239</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Att Projeto">
+      <created>1685466796471</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1685466796471</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
