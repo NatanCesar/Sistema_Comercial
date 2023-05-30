@@ -6,7 +6,7 @@ import sistema.projeto.exceptions.ClienteNaoExisteException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClientesList implements SistemaClientes_Interface {
+public class ClientesList implements SistemaClientesInterface {
     private List<Cliente> clientesList;
 
 

@@ -5,7 +5,7 @@ import sistema.projeto.exceptions.ClienteNaoExisteException;
 
 import java.util.List;
 
-public interface SistemaClientes_Interface {
+public interface SistemaClientesInterface {
     /**
      *
      * @param cliente cliente que vai ser cadastrado no sistema

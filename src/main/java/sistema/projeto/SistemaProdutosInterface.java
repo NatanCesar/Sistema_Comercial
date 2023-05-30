@@ -2,7 +2,7 @@ package sistema.projeto;
 
 import java.util.List;
 
-public interface SistemaProdutos_interface {
+public interface SistemaProdutosInterface {
 
     /**
      *

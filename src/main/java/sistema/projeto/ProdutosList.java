@@ -3,7 +3,7 @@ package sistema.projeto;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProdutosList  implements SistemaProdutos_interface{
+public class ProdutosList  implements SistemaProdutosInterface {
     private List<Produto>  produtosList;
 
 
