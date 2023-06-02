@@ -10,6 +10,8 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) throws IOException, ClienteJaExisteException {
 
+
+        String Fnome = "NAT";
         SistemaClientesInterface sistemaClientes = new ClientesList();
         GravadorDeClientes gravadorClientes = new GravadorDeClientes();
 
