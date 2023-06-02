@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/persistencia/GravadorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/persistencia/GravadorDeClientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,13 +25,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
   </component>
   <component name="ProjectId" id="2QId7S9b8FmpKbCZy1YPMPsB5SA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
