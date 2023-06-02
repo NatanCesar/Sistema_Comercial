@@ -11,11 +11,16 @@ public class Main {
     public static void main(String[] args) throws IOException, ClienteJaExisteException {
 
         SistemaClientesInterface sistemaClientes = new ClientesList();
-
         GravadorDeClientes gravadorClientes = new GravadorDeClientes();
+
+
         try{
-            List<Cliente> clientesList = gravadorClientes.recuperaClientes();
-            JOptionPane.showMessageDialog(null,sistemaClientes.getClientes());
+            List<Cliente> recuperaListCliente= gravadorClientes.recuperaClientes();
+            for (Cliente c: recuperaListCliente){
+                sistemaClientes.cadastrarCliente(c);
+                JOptionPane.showMessageDialog(null,c.getNome());
+
+            }
         } catch (IOException e){
             JOptionPane.showMessageDialog(null,"Não foi possível recuperar dados de nenhum Cliente.");
         }

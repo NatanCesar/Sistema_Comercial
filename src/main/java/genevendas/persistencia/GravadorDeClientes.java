@@ -17,7 +17,7 @@ public class GravadorDeClientes {
     public void gravaClientes(List<Cliente> clienteList) throws IOException {
         List<String> textoAGravar = new ArrayList<>();
         for (Cliente c: clienteList){
-            String linha = c.getNome()+"###"+c.getId()+"###"+c.getValorDaConta()+"###"+c.getProdutosAdquiridos();
+            String linha = c.getNome()+"###"+c.getId()+"###"+c.getValorDaConta();
             textoAGravar.add(linha);
         }
         this.gravador.gravaTextoEmArquivo(textoAGravar,this.arquivoClientes);
@@ -29,7 +29,7 @@ public class GravadorDeClientes {
         List<Cliente> clienteList = new ArrayList<>();
         for (String s: dadosDosClientes){
             String [] dados = s.split("###");
-            Cliente cliente = new Cliente(dados[0],Integer.parseInt(dados[1]),Double.parseDouble(dados[2]),dados[3]);
+            Cliente cliente = new Cliente(dados[0],Integer.parseInt(dados[1]),Double.parseDouble(dados[2]));
             clienteList.add(cliente);
         }
         return clienteList;

@@ -16,11 +16,11 @@ public class Cliente {
         this.valorDaConta = 0.0;
         this.produtosAdquiridos = new ArrayList<Produto>();
     }
-    public Cliente(String nome, int id, double valorDaConta, String produtosAdquiridos){
+    public Cliente(String nome, int id, double valorDaConta){
         this.nome = nome;
         this.id = id;
         this.valorDaConta = valorDaConta;
-        String [] produtos = produtosAdquiridos.split("!!!");
+
     }
 
     @Override
@@ -82,6 +82,6 @@ public class Cliente {
     @Override
     public String toString() {
         /*TODO*/
-        return "";
+        return "" + this.nome;
     }
 }
