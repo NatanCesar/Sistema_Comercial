@@ -1,55 +1,46 @@
 package genevendas;
 
 import genevendas.exceptions.ClienteJaExisteException;
-import genevendas.persistencia.GravadorDeClientes;
 
 import javax.swing.*;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
-    public static void main(String[] args) throws IOException, ClienteJaExisteException {
+    public static void main(String[] args) throws ClienteJaExisteException {
 
-        String Fnome = "NAT";
-        SistemaClientesInterface sistemaClientes = new ClientesList();
-        GravadorDeClientes gravadorClientes = new GravadorDeClientes();
-        SistemaProdutosInterface sistemaProdutos = new ProdutosList();
+        ProdutosList produtosList = new ProdutosList();
+        ClientesList clientesList = new ClientesList();
 
-        try{
-            List<Cliente> recuperaListCliente = gravadorClientes.recuperaClientes();
-            for (Cliente c: recuperaListCliente){
-                sistemaClientes.cadastrarCliente(c);
-                JOptionPane.showMessageDialog(null,c.getNome());
+        /* CRIAÇÂO DO CLIENTE:*/
+        String nomeC = JOptionPane.showInputDialog("Qual o nome do cliente? ");
 
-            }
-        } catch (IOException e){
-            JOptionPane.showMessageDialog(null,"Não foi possível recuperar dados de nenhum Cliente.");
-        }
+        Cliente cliente = new Cliente(nomeC);
+        clientesList.cadastrarCliente(cliente); /* AQUI TERIA UM TRY CATCH*/
 
 
-        String nome = JOptionPane.showInputDialog("Nome do cliente: ");
-        Double valorDaConta = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor da conta: "));
 
-        int quantProdutos = Integer.parseInt(JOptionPane.showInputDialog("Digite a quantidade de produtos: "));
+        /* CRIAÇÃO DO PRODUTO:*/
+        String nomeP = JOptionPane.showInputDialog("Nome do produto: ");
+        Double valorP = Double.parseDouble(JOptionPane.showInputDialog("Valor do produto: "));
+        String tipoP = JOptionPane.showInputDialog("Tipo do produto: ");
 
-        List<Produto> produtosAdiquiridosPeloCliente = new ArrayList<>();
-        for(int k=0; k < quantProdutos; k++) {
-            String nomeProduto = JOptionPane.showInputDialog("Nome do produto: ");
-            Double valorProduto = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do produto: "));
-            String tipoProduto = JOptionPane.showInputDialog("Tipo do produto: ");
-            Produto p = new Produto(nomeProduto, valorProduto, tipoProduto);
-            produtosAdiquiridosPeloCliente.add(p);
-        }
+        Produto produto = new Produto(nomeP,valorP,tipoP);
+        produtosList.cadastrarProduto(produto); /* AQUI TERIA UM TRY CATCH*/
 
 
-        Cliente c = new Cliente(nome, valorDaConta, produtosAdiquiridosPeloCliente);
-        sistemaClientes.cadastrarCliente(c);
 
-        String produtosCliente = c.getProdutosAdquiridos(produtosAdiquiridosPeloCliente);
+        /*ADICIONANDO PRODUTO AO CLIENTE*/
+        /* No sistema final vai ser feito pergutando qual cliente e qual produto, nesse caso
+         vou fazer com oq tem ai já msm
+         */
+        cliente.adquirirProduto(produto);
 
 
-        gravadorClientes.gravaClientes(sistemaClientes.getClientes(),produtosAdiquiridosPeloCliente);
+
+        JOptionPane.showMessageDialog(null,cliente.toString());
+
+
+
+
 
     }
 }

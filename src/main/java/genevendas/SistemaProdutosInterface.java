@@ -9,7 +9,7 @@ public interface SistemaProdutosInterface {
      * @param produto produto para cadastrar no sistema
      * @throws Exception lança exceção caso já exista um produto idêntico no sistema.
      */
-    void cadastrarProduto (Produto produto);
+    void cadastrarProduto (Produto produto) throws Exception;
 
 
     /**

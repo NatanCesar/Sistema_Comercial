@@ -10,7 +10,7 @@ public class Cliente {
     private double valorDaConta;
     private List<Produto> produtosAdquiridos;
 
-    public Cliente(String nome, double valorDaConta, List<Produto> produtosAdquiridos){
+    public Cliente(String nome){
         this.nome = nome;
         this.id = this.hashCode();
         this.valorDaConta = 0.0;
@@ -70,19 +70,15 @@ public class Cliente {
         this.valorDaConta = valorDaConta;
     }
 
-    public String getProdutosAdquiridos(List<Produto> produtosAdquiridos) {
-        String produtosString = null;
-        for (Produto p : produtosAdquiridos) {
-            produtosString = p.getNome()+"###"+p.getValor();
-        }
-        return produtosString;
-    }
-
 
 
     @Override
     public String toString() {
-        /*TODO*/
-        return "" + this.nome;
+        return "Cliente{" +
+                "nome='" + this.nome + '\'' +
+                ", id=" + this.id +
+                ", valorDaConta=" + this.valorDaConta +
+                ", produtosAdquiridos=" + this.produtosAdquiridos.toString() +
+                '}';
     }
 }
