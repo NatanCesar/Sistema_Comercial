@@ -10,7 +10,7 @@ public class Cliente {
     private double valorDaConta;
     private List<Produto> produtosAdquiridos;
 
-    public Cliente(String nome){
+    public Cliente(String nome, double valorDaConta, List<Produto> produtosAdquiridos){
         this.nome = nome;
         this.id = this.hashCode();
         this.valorDaConta = 0.0;
@@ -70,13 +70,14 @@ public class Cliente {
         this.valorDaConta = valorDaConta;
     }
 
-    public String getProdutosAdquiridos() {
+    public String getProdutosAdquiridos(List<Produto> produtosAdquiridos) {
         String produtosString = null;
         for (Produto p : produtosAdquiridos) {
-            produtosString = p.getNome() + "!!!" + p.getId() + "!!!" + p.getTipoProduto() + "!!!" + p.getValor();
+            produtosString = p.getNome()+"###"+p.getValor();
         }
         return produtosString;
     }
+
 
 
     @Override

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ClientesList implements SistemaClientesInterface {
+
     private List<Cliente> clientesList;
 
 
@@ -34,6 +35,7 @@ public class ClientesList implements SistemaClientesInterface {
     public List<Cliente> getClientes() {
         return clientesList;
     }
+
 
     @Override
     public void carregarClientes(List<Cliente> clienteList) throws ClienteJaExisteException {

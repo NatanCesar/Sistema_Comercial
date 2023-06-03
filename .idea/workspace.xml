@@ -6,6 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clientes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/SistemaProdutosInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaProdutosInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/persistencia/GravadorDeClientes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/persistencia/GravadorDeClientes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +103,7 @@
       <workItem from="1685452148855" duration="3111000" />
       <workItem from="1685466783172" duration="6131000" />
       <workItem from="1685666587756" duration="3036000" />
+      <workItem from="1685791958641" duration="9343000" />
     </task>
     <task id="LOCAL-00001" summary="Início do Projeto">
       <created>1685047463414</created>

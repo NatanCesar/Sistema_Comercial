@@ -4,18 +4,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ProdutosList  implements SistemaProdutosInterface {
-    private List<Produto>  produtosList;
 
+    private List<Produto> produtosList;
 
-    public ProdutosList(){
+    public ProdutosList() {
         this.produtosList = new ArrayList<Produto>();
     }
 
-
-
     @Override
-    public void cadastrarProduto(Produto produto) throws Exception {
-        /*TODO*/
+    public void cadastrarProduto(Produto produto) {
+        this.produtosList.add(produto);
     }
 
     @Override

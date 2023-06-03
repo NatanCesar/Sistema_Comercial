@@ -13,7 +13,6 @@ public interface SistemaClientesInterface {
      */
     void cadastrarCliente (Cliente cliente) throws ClienteJaExisteException;
 
-
     /**
      *
      * @param nome nome do cliente
