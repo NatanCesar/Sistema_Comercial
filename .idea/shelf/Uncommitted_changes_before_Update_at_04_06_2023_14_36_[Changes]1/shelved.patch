@@ -1,0 +1,19 @@
+Index: src/main/java/genevendas/ClientesList.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package genevendas;\r\n\r\nimport genevendas.exceptions.ClienteJaExisteException;\r\nimport genevendas.exceptions.ClienteNaoExisteException;\r\n\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class ClientesList implements SistemaClientesInterface {\r\n\r\n    private List<Cliente> clientesList;\r\n\r\n\r\n    public ClientesList (){\r\n        this.clientesList = new ArrayList<Cliente>();\r\n    }\r\n\r\n    @Override\r\n    public void cadastrarCliente(Cliente cliente) throws ClienteJaExisteException {\r\n        if (clienteJaExiste(cliente)){\r\n            throw new ClienteJaExisteException(\"Cliente já existe no Sistema\");\r\n        } else {\r\n            clientesList.add(cliente);\r\n        }\r\n\r\n\r\n    }\r\n\r\n    @Override\r\n    public void apagarCliente(String nome, String id) throws ClienteNaoExisteException {\r\n        /*TODO*/\r\n    }\r\n\r\n    @Override\r\n    public List<Cliente> getClientes() {\r\n        return clientesList;\r\n    }\r\n\r\n\r\n    @Override\r\n    public void carregarClientes(List<Cliente> clienteList) throws ClienteJaExisteException {\r\n        this.clientesList = clienteList;\r\n    }\r\n\r\n    public boolean clienteJaExiste(Cliente cliente){\r\n        for (Cliente c: this.clientesList){\r\n            if (c.equals(cliente)){\r\n                return true;\r\n            }\r\n        }\r\n        return false;\r\n    }\r\n\r\n    @Override\r\n    public String toString() {\r\n        String stringClientes = null;\r\n        for (Cliente c : clientesList) {\r\n            stringClientes = c.toString() + \"###\";\r\n        }\r\n        return stringClientes;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/genevendas/ClientesList.java b/src/main/java/genevendas/ClientesList.java
+--- a/src/main/java/genevendas/ClientesList.java	
++++ b/src/main/java/genevendas/ClientesList.java	
+@@ -18,7 +18,7 @@
+     @Override
+     public void cadastrarCliente(Cliente cliente) throws ClienteJaExisteException {
+         if (clienteJaExiste(cliente)){
+-            throw new ClienteJaExisteException("Cliente já existe no Sistema");
++            throw new ClienteJaExisteException("Cliente     já existe no Sistema");
+         } else {
+             clientesList.add(cliente);
+         }

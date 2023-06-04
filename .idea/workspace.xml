@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2023_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2023_14_48__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/SistemaProdutosInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaProdutosInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/exceptions/ClienteJaExisteException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/exceptions/ClienteJaExisteException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +34,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2QId7S9b8FmpKbCZy1YPMPsB5SA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,6 +47,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/natan/Desktop/Projeto_AYLA&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -98,6 +105,13 @@
       <workItem from="1685452148855" duration="3111000" />
       <workItem from="1685466783172" duration="6131000" />
       <workItem from="1685666587756" duration="3036000" />
+      <workItem from="1685825943923" duration="6926000" />
+      <workItem from="1685888937297" duration="5426000" />
+      <workItem from="1685900810160" duration="513000" />
+      <workItem from="1685901357676" duration="1078000" />
+      <workItem from="1685902455526" duration="1960000" />
+      <workItem from="1685904453492" duration="18000" />
+      <workItem from="1685904491844" duration="883000" />
     </task>
     <task id="LOCAL-00001" summary="Início do Projeto">
       <created>1685047463414</created>
@@ -179,5 +193,15 @@
     <MESSAGE value="Início do Projeto" />
     <MESSAGE value="Att Projeto" />
     <option name="LAST_COMMIT_MESSAGE" value="Att Projeto" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
