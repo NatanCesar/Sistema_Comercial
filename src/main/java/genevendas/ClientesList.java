@@ -11,6 +11,7 @@ public class ClientesList implements SistemaClientesInterface {
     private List<Cliente> clientesList;
 
 
+
     public ClientesList (){
         this.clientesList = new ArrayList<Cliente>();
     }
@@ -21,6 +22,7 @@ public class ClientesList implements SistemaClientesInterface {
             throw new ClienteJaExisteException("Cliente já existe no Sistema");
         } else {
             clientesList.add(cliente);
+
         }
 
 
@@ -36,11 +38,6 @@ public class ClientesList implements SistemaClientesInterface {
         return clientesList;
     }
 
-
-    @Override
-    public void carregarClientes(List<Cliente> clienteList) throws ClienteJaExisteException {
-        this.clientesList = clienteList;
-    }
 
     public boolean clienteJaExiste(Cliente cliente){
         for (Cliente c: this.clientesList){
@@ -59,4 +56,6 @@ public class ClientesList implements SistemaClientesInterface {
         }
         return stringClientes;
     }
+
+
 }

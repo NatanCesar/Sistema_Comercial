@@ -9,12 +9,14 @@ public class Produto {
     private int id;
     private String tipoProduto;
 
-    public Produto(String nome, double valor, String tipoProduto) {
+
+    public Produto(String nome, double valor, int ID,String tipoProduto) {
         this.nome = nome;
         this.valor = valor;
         this.tipoProduto = tipoProduto;
-        this.id = this.hashCode();
+        this.id = ID;
     }
+
 
     @Override
     public boolean equals(Object o) {
@@ -71,9 +73,14 @@ public class Produto {
     public void setTipoProduto(String tipoProduto) {
         this.tipoProduto = tipoProduto;
     }
+
     @Override
     public String toString() {
-        /*TODO*/
-        return "";
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", valor=" + valor +
+                ", id=" + id +
+                ", tipoProduto='" + tipoProduto + '\'' +
+                '}';
     }
 }

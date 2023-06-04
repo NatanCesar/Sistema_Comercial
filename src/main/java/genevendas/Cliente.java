@@ -10,17 +10,16 @@ public class Cliente {
     private double valorDaConta;
     private List<Produto> produtosAdquiridos;
 
-    public Cliente(String nome){
+    public Cliente(String nome, int ID){
         this.nome = nome;
-        this.id = this.hashCode();
+        this.id = ID;
         this.valorDaConta = 0.0;
         this.produtosAdquiridos = new ArrayList<Produto>();
     }
-    public Cliente(String nome, int id, double valorDaConta){
+    public Cliente(String nome, int ID, double valorDaConta){
         this.nome = nome;
-        this.id = id;
+        this.id = ID;
         this.valorDaConta = valorDaConta;
-
     }
 
     @Override
@@ -78,7 +77,7 @@ public class Cliente {
                 "nome='" + this.nome + '\'' +
                 ", id=" + this.id +
                 ", valorDaConta=" + this.valorDaConta +
-                ", produtosAdquiridos=" + this.produtosAdquiridos.toString() +
+                ", produtosAdquiridos=" + this.produtosAdquiridos +
                 '}';
     }
 }

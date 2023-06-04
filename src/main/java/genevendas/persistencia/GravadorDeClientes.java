@@ -1,8 +1,5 @@
 package genevendas.persistencia;
-
 import genevendas.Cliente;
-import genevendas.Produto;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,17 +12,12 @@ public class GravadorDeClientes {
         this.gravador = new GravadorDeDados();
     }
 
-    public void gravaClientes(List<Cliente> clienteList, List<Produto> produtosAdquiridos) throws IOException {
+    public void gravaClientes(List<Cliente> clienteList) throws IOException {
         List<String> textoAGravar = new ArrayList<>();
-        String linhaInteira = "";
-        for (Cliente c : clienteList){
-            linhaInteira = c.getNome()+"###"+c.getId()+"###"+c.getValorDaConta()+"###";
-
+        for (Cliente c: clienteList){
+            String linha = c.getNome()+"###"+c.getId()+"###"+c.getValorDaConta();
+            textoAGravar.add(linha);
         }
-        for (Produto p : produtosAdquiridos) {
-            linhaInteira += p.getNome()+"###"+p.getValor()+"###";
-        }
-        textoAGravar.add(linhaInteira);
         this.gravador.gravaTextoEmArquivo(textoAGravar,this.arquivoClientes);
     }
 
