@@ -34,7 +34,7 @@ public class ClientesList implements SistemaClientesInterface {
         if (clienteJaExiste(cliente)){
             clientesList.remove(cliente);
         } else {
-            throw new ClienteNaoExisteException("Cliente não existe");
+            throw  new ClienteNaoExisteException("O cliente não existe.");
         }
     }
 
