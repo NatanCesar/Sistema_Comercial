@@ -5,6 +5,7 @@ import genevendas.exceptions.ClienteNaoExisteException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 
 public class ClientesList implements SistemaClientesInterface {
 
@@ -29,13 +30,16 @@ public class ClientesList implements SistemaClientesInterface {
     }
 
     @Override
-    public void apagarCliente(String nome, int id) throws ClienteNaoExisteException {
-        Cliente cliente = new Cliente(nome, id);
-        if (clienteJaExiste(cliente)){
-            clientesList.remove(cliente);
-        } else {
-            throw  new ClienteNaoExisteException("O cliente não existe.");
+    public void apagarCliente(int id) throws ClienteNaoExisteException {
+
+        for (Cliente c : this.clientesList) {
+            if (c.getId() == id) {
+                this.clientesList.remove(c);
+                return;
+            }
         }
+        throw new ClienteNaoExisteException("Cliente não existe.");
+
     }
 
     @Override
@@ -53,14 +57,32 @@ public class ClientesList implements SistemaClientesInterface {
         return false;
     }
 
-    @Override
-    public String toString() {
-        String stringClientes = null;
-        for (Cliente c : clientesList) {
-            stringClientes = c.toString() + "###";
+    public StringBuilder mostrarClientes(){
+        StringBuilder mensagem = new StringBuilder();
+        for (Cliente c: clientesList){
+            mensagem.append(c.toString());
         }
-        return stringClientes;
+        return mensagem;
     }
 
+    public Boolean IdJaExistente (Cliente clienteTeste){
+        for (Cliente c: this.clientesList){
+            if (c.getId() == clienteTeste.getId()){
+                return true;
+            }
+        }
+        return false;
+    }
 
+    public Cliente getClienteByID(int id) throws ClienteNaoExisteException{
+        for (Cliente c: clientesList){
+            if (c.getId() == id){
+                return c;
+            }
+        }
+        throw new ClienteNaoExisteException("Cliente não existe no sistema");
+    }
 }
+
+
+

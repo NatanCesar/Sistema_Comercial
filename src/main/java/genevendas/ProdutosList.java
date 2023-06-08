@@ -1,8 +1,10 @@
 package genevendas;
 
+import genevendas.exceptions.ClienteNaoExisteException;
 import genevendas.exceptions.ProdutoJaExisteException;
 import genevendas.exceptions.ProdutoNaoExisteException;
 
+import javax.sound.sampled.Port;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,6 +15,8 @@ public class ProdutosList  implements SistemaProdutosInterface {
     public ProdutosList() {
         this.produtosList = new ArrayList<Produto>();
     }
+
+
 
     @Override
     public void cadastrarProduto(Produto produto) throws ProdutoJaExisteException {
@@ -25,6 +29,7 @@ public class ProdutosList  implements SistemaProdutosInterface {
 
     }
 
+
     public boolean produtoJaExiste(Produto produto){
         for (Produto p : this.produtosList){
             if (p.equals(produto)){
@@ -36,17 +41,40 @@ public class ProdutosList  implements SistemaProdutosInterface {
 
 
     @Override
-    public void apagarProduto(String nome, int id) throws ProdutoNaoExisteException {
-        Produto produto = new Produto(nome, 0, id, "");
-        if (produtoJaExiste(produto)){
-            this.produtosList.remove(produto);
-        } else {
-            throw new ProdutoNaoExisteException("Produto não existe")
+    public void apagarProduto(int id) throws ProdutoNaoExisteException {
+
+        for (Produto p : this.produtosList) {
+            if (p.getId() == id) {
+                this.produtosList.remove(p);
+                return;
+            }
         }
+        throw new ProdutoNaoExisteException("Cliente não existe.");
+
     }
+
 
     @Override
     public List<Produto> getProdutos() {
         return produtosList;
+    }
+
+
+    public StringBuilder mostrarProdutos(){
+        StringBuilder mensagem = new StringBuilder();
+        for (Produto p: produtosList){
+            mensagem.append(p.toString());
+        }
+        return mensagem;
+    }
+
+
+    public Produto getProdutoByID(int id) throws ProdutoNaoExisteException {
+        for (Produto p: produtosList){
+            if (p.getId() == id){
+                return p;
+            }
+        }
+        throw new ProdutoNaoExisteException("Cliente não existe no sistema");
     }
 }

@@ -20,6 +20,7 @@ public class Cliente {
         this.nome = nome;
         this.id = ID;
         this.valorDaConta = valorDaConta;
+        this.produtosAdquiridos = new ArrayList<>();
     }
 
     @Override
@@ -39,6 +40,7 @@ public class Cliente {
         result = 31 * result + id;
         return result;
     }
+
     public void adquirirProduto(Produto produto){
                 this.produtosAdquiridos.add(produto);
                 this.valorDaConta += produto.getValor();
@@ -73,11 +75,6 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "Cliente{" +
-                "nome='" + this.nome + '\'' +
-                ", id=" + this.id +
-                ", valorDaConta=" + this.valorDaConta +
-                ", produtosAdquiridos=" + this.produtosAdquiridos +
-                '}';
+        return this.nome + ", Valor da conta R$" + this.valorDaConta + ", Id: " +this.id + "\n";
     }
 }

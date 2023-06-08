@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto" />
+    <list default="true" id="2300427e-4168-42f8-abbb-909f7ce3c035" name="Changes" comment="Att Projeto">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2023_14_48__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_27_05_2023_14_48__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clientes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/clientes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/produtos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ClientesList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/Produto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/ProdutosList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/genevendas/SistemaClientesInterface.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,6 +35,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2QId7S9b8FmpKbCZy1YPMPsB5SA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,7 +54,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/natan/Desktop/Projeto_AYLA",
+    "last_opened_file_path": "C:/Users/nathg/IdeaProjects",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -96,6 +114,7 @@
       <workItem from="1685666587756" duration="3036000" />
       <workItem from="1685825943923" duration="6926000" />
       <workItem from="1685888937297" duration="5742000" />
+      <workItem from="1686080715782" duration="11549000" />
     </task>
     <task id="LOCAL-00001" summary="Início do Projeto">
       <created>1685047463414</created>

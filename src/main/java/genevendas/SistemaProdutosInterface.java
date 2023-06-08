@@ -17,11 +17,10 @@ public interface SistemaProdutosInterface {
 
     /**
      *
-     * @param nome nome do produto
-     * @param id id (hashCode) do produto
+     * @param id id do produto que deseja apagar
      * @throws ProdutoNaoExisteException lança exceção caso o produto não exista no Sistema
      */
-    void apagarProduto (String nome, int id) throws ProdutoNaoExisteException;
+    void apagarProduto (int id) throws ProdutoNaoExisteException;
 
 
     /**
@@ -29,5 +28,20 @@ public interface SistemaProdutosInterface {
      * @return retorna uma lista com todos os produtos
      */
     List<Produto> getProdutos ();
+
+    /**
+     *
+     * @return retorna uma string com informações de cada produto da lista
+     */
+    public StringBuilder mostrarProdutos();
+
+
+    /**
+     *
+     * @param id id do produto  que deseja buscar
+     * @return retorna o produto com o id correspondente
+     * @throws ProdutoNaoExisteException lança exceção caso não exista nenhum produto com o id informado
+     */
+    public Produto getProdutoByID(int id) throws ProdutoNaoExisteException;
 
 }
